@@ -43,3 +43,25 @@ By now, users have just created their first resources, now we can start unlockin
 Users can expect to see some challenges within this section in which there is some developmwent of real enterprise architecture and use cases.
 
 ## Furthher Readings
+
+```
+Outline:
+Terraform basics
+What it is
+What it isn’t
+Terminology and Structure
+Why it’s awesome
+Pros and Cons
+Terraform 101
+AWS Basics
+Google Basics
+GitHub
+Terraform Providers
+Cool Ones within the community
+How to use them
+POSSIBLY- (Making your own)
+Terraform at Scale
+Terraform with multiple accounts within Development, Staging and Production Accounts
+CI on Top of Terraform – AWS
+```
+

@@ -1,6 +1,7 @@
 # Terraform at a glance
 
-Terafrom si a platforlm released by the Hashicorp company. This goes along with htheir other suite of tools including:
+Terafrom is a platform released by the Hashicorp company. This goes along with their other suite of tools including:
+
 - Packer
 - Vagrant
 
