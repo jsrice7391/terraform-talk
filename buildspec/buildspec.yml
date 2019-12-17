@@ -12,7 +12,7 @@ phases:
       - sudo mv terraform /usr/local/bin/
   build:
     commands:
-      - cd $CODEBUILD_SOURCE_DIR/01_TheLab/Solved
+      - cd CODEBUILD_SRC_DIR/01_TheLab/Solved
       - terraform init
       - terraform plan
       - terraform apply
