@@ -15,7 +15,7 @@ phases:
       - cd $CODEBUILD_SRC_DIR/01_TheLab/Solved
       - terraform init
       - terraform plan
-      - terraform apply
+      - terraform apply -auto-approve
   post_build:
     commands:
       - echo "Naiiiillleeed it"
