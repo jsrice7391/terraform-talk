@@ -13,9 +13,9 @@ phases:
   build:
     commands:
       - cd $CODEBUILD_SRC_DIR/01_TheLab/Solved
-      - terraform init
-      - terraform plan
-      - terraform apply -auto-approve
+      - terraform init -input=false
+      - terraform plan -out=tfplan -input=false
+      - terraform apply -input=false tfplan
   post_build:
     commands:
       - echo "Naiiiillleeed it"
