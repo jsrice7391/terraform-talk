@@ -1,0 +1,24 @@
+version: 0.2
+
+
+phases:
+  install:
+    commands:
+      - npm install -g yarn
+  pre_build:
+    commands:
+      - wget -q https://releases.hashicorp.com/terraform/0.12.14/terraform_0.12.14_linux_amd64.zip
+      - unzip terraform_0.12.14_linux_amd64.zip
+      - sudo mv terraform /usr/local/bin/
+  build:
+    commands:
+      - cd $CODEBUILD_SOURCE_DIR/01_TheLab/Solved
+      - terraform init
+      - terraform plan
+      - terraform apply
+  post_build:
+    commands:
+      - echo "Naiiiillleeed it"
+cache:
+  paths:
+    - 'node_modules/*'

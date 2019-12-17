@@ -1,14 +1,25 @@
-# Terraform 101
+# Terraform 101 - Building on AWS
 This is a repo for the source code for a talk I am doing for DevOps University on Terraform! :terraform:
 
-- DevOps University can be found here:
+- Cloud Instutute can be found here:
 - Terraform Official Docs:
 - Slides: __eventually here__
-- Talk Outline:
-  - 01_TheBeginning
-  - 02_CommandsAndFiles
-  - 03_ProvidersAndCI
-  - 04_TheBeyond
+
+# Talk Outline:
+
+- The Beginning
+    - What Terraform is.
+    - What to use it for
+- Begin and Build
+     - Start building within AWS
+     - Create a VPC
+     - Create other resources
+- Terraforms True Powers
+     - Providers
+     - HCL Language
+     - Remote capabilities
+- The Beyond
+    - The Future features that are there, but not 100% ironed out
 
 # Using this repo
 This repository contains a `Vagrantfile` which enables developers to create Virtual machines with the necessary specifications provided within the Vagrantfile. Running with Vargan trequires two main programs:
@@ -16,52 +27,19 @@ This repository contains a `Vagrantfile` which enables developers to create Virt
 - VirtualBox
 - Vagrant
 
-Users using the Vagranstifle will benefit from an isolated environment with all the necessary installations and versions.
+Users using the Vagrantifle will benefit from an isolated environment with all the necessary installations and versions.
 
-## 01 - The Beginning
+# This Repo Layout
 
-In this folder, users can go and learn about the basics of Terraform. This includes:
+## 01_TheLab
+The lab is a folder that users can go to in order to get most comfortable with Terraform. Within the folder, there is a `Solved` and an `Unsolved` folder. Also within the folder is a README.md that will have a series of questons on it so that users can answerr the challenges and then check the possible approach within the Solved folder.
 
-- What Terraform is?
-- How to install it
-- Common vocabulary
-- How it works
-- "The Hello World" Example"
+## buildspec
+AWS Codebuild looks for a `buildspec/buildspec.yml` file. For those users that might want to see a solution in which they could use CodeBuild to handle all of their Terrafrom deployments.
 
-## 02 - Command Line and Files
+## Docs
+General files on documentation and other good reads regarding the product.
 
-By now, users have just created their first resources, now we can start unlocking some very cool things within Terraform. Users can expect to learn:
-
-- TF State
-- TF Goodies
-- Terraform Providers
-
-## 03 - Terraform Modulea and CI wihtin Terraform
-
-## 04 - The Beyond
-
-Users can expect to see some challenges within this section in which there is some developmwent of real enterprise architecture and use cases.
-
-## Furthher Readings
-
-```
-Outline:
-Terraform basics
-What it is
-What it isn’t
-Terminology and Structure
-Why it’s awesome
-Pros and Cons
-Terraform 101
-AWS Basics
-Google Basics
-GitHub
-Terraform Providers
-Cool Ones within the community
-How to use them
-POSSIBLY- (Making your own)
-Terraform at Scale
-Terraform with multiple accounts within Development, Staging and Production Accounts
-CI on Top of Terraform – AWS
-```
+## Providers
+The talk I do is specifically within the AWS environment, but I would never want to steer users in a direction in which they thought that Terraform was just for AWS. This folder shows users other provider possibilites I have used on my own and really liked!
 

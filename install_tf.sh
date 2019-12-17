@@ -7,9 +7,7 @@ fi
 sudo apt-get install python-pip -y -qq
 sudo apt-get install python3-pip -y -qq
 pip3 install awscli virtualenv --upgrade --user
-
 # Install Terraform Version 0.12.16
-
 wget -q https://releases.hashicorp.com/terraform/0.12.14/terraform_0.12.14_linux_amd64.zip
 #  Unzip it
 unzip terraform_0.12.14_linux_amd64.zip
