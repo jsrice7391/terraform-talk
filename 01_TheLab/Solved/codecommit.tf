@@ -8,7 +8,7 @@ locals {
       }, {
       "name"        = "another-repo",
       "description" = "The other repo",
-      "github_url"  = "https://github.com/jsrice7391/terraform-talk",
+      "github_url"  = "https://github.com/jsrice7391/powershellvsts",
       "buildspec"   = "buildspec/buildspec.yml"
   }]
 }
