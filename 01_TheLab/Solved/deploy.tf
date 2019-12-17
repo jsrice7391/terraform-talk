@@ -9,6 +9,8 @@ resource "aws_s3_bucket" "new_s3_bucket" {
   }
 }
 
+
+
 resource "aws_security_group" "applications" {
   name = "applications-security-groups"
   ingress {
@@ -23,7 +25,6 @@ resource "aws_security_group" "applications" {
 resource "aws_instance" "test-server" {
   ami           = "ami-00068cd7555f543d5"
   instance_type = "t2.micro"
-
   tags = {
     Name       = "test_server"
     AnotherTag = "This one should work"
